@@ -1,12 +1,29 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-#hungryUiArea{
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .searchArea{
-    margin-top: 50px;
-    text-align: center;
+  position: relative;
+  margin-top: 50px;
+  text-align: center;
 }
+.searchArea input[type="text"] {
+  padding: 20px 80px;
+  background-color: #f8f7f5;
+  border: none;
+  font-size: 18px;
+  border-radius: 10px;
+}
+.searchArea input[type="text"]:focus {
+  border: none;
+}
+#searchButton {
+  position: absolute;
+  background-color: #f06c4e;
+  color: whitesmoke;
+  padding: 18px 18px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
