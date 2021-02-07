@@ -16,3 +16,11 @@
    }
    displayMealsDetail();
 
+const mealsItem = document.getElementById('mealsItem');
+   function createMealItem(){
+    mealsItem.innerHTML = <div class = "item">
+      <img src = "" alt =""></img>
+      <h3></h3>
+    </div>
+   }
+   createMealItem();
