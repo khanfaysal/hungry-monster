@@ -1,29 +1,51 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+.mealnav ul li{
+  padding: 20px;
+}
+.form-control{
+    background-color: whitesmoke;
+    padding: 30px;
+    border: none;
+    border-radius: 15px;
 }
 .searchArea{
   position: relative;
-  margin-top: 50px;
+}
+.btn{
+    padding: 9px 20px;
+    border-radius: 15px;
+}
+.searchBtn {
+    position: absolute;
+    background-color: tomato;
+    color: white;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border: none;
+}
+ /* css code create from js */
+/* .mealsItem{
+
+}
+.mealImg{
+  width: 300px;
+}
+.mealHeading{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 15px;
   text-align: center;
-}
-.searchArea input[type="text"] {
-  padding: 20px 80px;
-  background-color: #f8f7f5;
-  border: none;
-  font-size: 18px;
-  border-radius: 10px;
-}
-.searchArea input[type="text"]:focus {
-  border: none;
-}
-#searchButton {
-  position: absolute;
-  background-color: #f06c4e;
-  color: whitesmoke;
-  padding: 18px 18px;
-  font-size: 18px;
-  border-radius: 10px;
-}
+  background-color: #f06c4e; 
+   
+} */
+
+
+
+
 
