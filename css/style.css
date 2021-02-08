@@ -10,7 +10,7 @@
 }
 .form-control{
     background-color: whitesmoke;
-    padding: 30px;
+    padding: 20px;
     border: none;
     border-radius: 15px;
 }
@@ -18,8 +18,8 @@
   position: relative;
 }
 .btn{
-    padding: 9px 20px;
-    border-radius: 15px;
+    padding: 9px 30px;
+    border-radius: 5px;
 }
 .searchBtn {
     position: absolute;
@@ -31,8 +31,7 @@
     border: none;
 }
  /* css code create from js */
-/* .mealsItem{
-
+ .mealsItem{
 }
 .mealImg{
   width: 300px;
@@ -43,7 +42,7 @@
   text-align: center;
   background-color: #f06c4e; 
    
-} */
+}
 
 
 
