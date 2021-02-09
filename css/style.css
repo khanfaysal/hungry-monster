@@ -1,4 +1,4 @@
-
+/* global css code */
 * {
   margin: 0;
   padding: 0;
@@ -12,19 +12,15 @@
     background-color: whitesmoke;
     padding: 20px;
     border: none;
-    border-radius: 15px;
 }
 .searchArea{
   position: relative;
 }
 .btn{
     padding: 9px 30px;
-    border-radius: 5px;
 }
 .searchBtn {
     position: absolute;
-    background-color: tomato;
-    color: white;
     top: 0;
     right: 0;
     height: 100%;
@@ -34,14 +30,12 @@
  .mealsItem{
 }
 .mealImg{
-  width: 300px;
+  width: 200px;
 }
 .mealHeading{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 15px;
   text-align: center;
   background-color: #f06c4e; 
-   
 }
 
 
