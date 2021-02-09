@@ -9,8 +9,8 @@ const searchMeal = () => {
    .then(res =>res.json())
    .then(data =>{
     showMealUi(data.meals)
-   });
-   .catch(error => alert('please input valid information'))
+   })
+   .catch(error => alert('Please try again valid keyword.'))
   };
 
   const showMealUi = meal => {
@@ -29,30 +29,6 @@ const searchMeal = () => {
         mealDivision.appendChild(mealsDiv);
     });
 };
-
-const foodIngredient = () => {
-  const url =` https://www.themealdb.com/api/json/v1/1/lookup.php?i=52772`
-  fetch(url)
-      .then(response => response.json())
-      .then(data => {
-          //console.log(data);
-          //displayMeal(data.meals);
-          ingredientInfo(data.meals);
-      });
-};
-
-const ingredientInfo = ingredient => {
-  const infoDiv = document.getElementById('ingredientDetails');
-  ingredient.forEach(element => {
-      infoDiv.innerHTML = `
-      <img class="img-fluid" src="${element.strMealThumb}" alt="" />
-      <h2 class="h4 p-2">${element.strIngredient1}</h2>
-      `;
-
-      // console.log(element);
-  });
-};
-
 const mealItemIngredint = () => {
   const url =` https://www.themealdb.com/api/json/v1/1/lookup.php?i=52772`
   fetch(url)
@@ -65,14 +41,18 @@ const mealItemIngredint = () => {
 };
 
 const mealInformation = ingredient => {
-  const infoDiv = document.getElementById('allInfoItem');
+  const infoDiv = document.getElementById('ingredientDetails');
   ingredient.forEach(element => {
       infoDiv.innerHTML = `
-      <img class="img-fluid" src="${element.strMealThumb}" alt="" />
-      <h2 class="h4 p-2">${element.strIngredient1}</h2>
+      <img class="img-fluid" src="${element.strMealThumb}" alt="">
+      <li>${element.strIngredient1}</li>
+      <li>${element.strIngredient2}</li>
+      <li>${element.strIngredient3}</li>
+      <li>${element.strIngredient4}</li>
+      <li>${element.strIngredient5}</li>
+      <li>${element.strIngredient6}</li>
+      <li>${element.strIngredient}</li>
       `;
-
-      console.log(element);
   });
 };
 
