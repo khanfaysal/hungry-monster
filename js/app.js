@@ -1,5 +1,6 @@
 
 // search meal js code start
+// use strict also validate for coder
 'use strict';
 const searchMeal = () => {
   const searchMealText = document.getElementById('searchMealArea').value;
@@ -10,6 +11,7 @@ const searchMeal = () => {
    .then(data =>{
     showMealUi(data.meals)
    })
+  //  validation code
     .catch(error => alert('Please try again valid keyword.'))
   };
 
